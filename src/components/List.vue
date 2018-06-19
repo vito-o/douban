@@ -8,8 +8,10 @@
           <p>{{item.content | subStr}}</p>
         </div>
         <div class="author">
-          <span class="name"></span>
-          <span class="label"></span>
+          <span class="name">{{item.category_name}}</span>
+          <span class="label" v-if="item.category_name">
+            本活动来自栏目 {{item.subcategory_name}}
+          </span>
         </div>
       </router-link>
     </template>

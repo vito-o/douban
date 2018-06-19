@@ -13,7 +13,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "normalize.css": "^8.0.0",
-    "superagent": "^3.8.3",
+    "superagent": "^3.5.2",
     "superagent-jsonp": "^0.1.1",
     "vue": "^2.5.2",
     "vue-infinite-loading": "^2.3.1",
