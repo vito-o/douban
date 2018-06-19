@@ -20,6 +20,10 @@ export default new Router({
       component: PagesView,
       children: [
         {
+          path: '',
+          redirect: '/pages/home',
+        },
+        {
           path: 'home',
           name: 'HomeView',
           component: HomeView,

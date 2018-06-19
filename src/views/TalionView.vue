@@ -68,11 +68,17 @@
           </div>
         </li>
       </ul>
+      <sub-nav mold="navBottom"></sub-nav>
   </div>
 </template>
 
 <script>
+import SubNav from '@/components/SubNav';
+
 export default {
+  components: {
+    SubNav
+  },
   data() {
     return {
     };
