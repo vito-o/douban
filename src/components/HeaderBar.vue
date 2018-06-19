@@ -1,13 +1,13 @@
 <template>
   <div class="header-bar">
       <h1 class="title">
-          <router-link :to="{}">
+          <router-link :to="{ name : 'HomeView' }">
               豆瓣
           </router-link>
       </h1>
       <ul class="nav">
           <li>
-              <router-link style="color:#2384e8;" :to="{}">
+              <router-link style="color:#2384e8;" :to="{ name : 'MovieView' }">
                 电影
               </router-link>
           </li>

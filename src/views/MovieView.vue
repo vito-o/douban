@@ -8,12 +8,33 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
 import Scroller from '@/components/Scroller';
 
 export default {
   name: 'movie-view',
   components: {
     Scroller
+  },
+  data() {
+    return {}
+  },
+  computed: {
+    ...mapState({
+      hotMovies: state => state.movie.hotMovies,
+      topMovies: state => state.movie.topMovies,
+      newMovies: state => state.movie.newMovies,
+      movieTags: state => state.movie.movieTags,
+    })
+  },
+  methods: {
+    getMovie() {
+      this.$store.dispatch('getMovie')
+    },
+  },
+  created() {
+    this.getMovie();
   }
 };
 
